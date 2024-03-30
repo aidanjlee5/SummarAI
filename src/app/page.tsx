@@ -1,113 +1,71 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <body className="w-full">
+        <div className="grid w-full grid-cols-4">
+          <div className="flex w-full h-full col-span-1">
+            <div className="italic fixed top-0 left-0 p-8 text-5xl">SummarAI</div>
+            <div className='w-full ml-8 flex flex-col mt-32' style={{ width: '60%' }}>
+              <div className='flex flex-col gap-y-2'>
+                <div className='rounded-lg bg-yellow-200 py-4 mb-2 px-4 text-xl'>For You</div>
+                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+              </div>
+              <div className='flex flex-col gap-y-2 mt-8'>
+                <div className='rounded-lg bg-yellow-200 mb-2 py-4 px-4 text-xl'>Trending Global</div>
+                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+              </div>
+            </div>
+            <div className="fixed bottom-0 left-0 p-4">
+              <Image 
+                  alt="settings icon"
+                  src='/settings.png'
+                  width={75}
+                  height={75}
+                />
+            </div>
+          </div>
+          <div className="flex w-full h-full col-span-3">
+            <div className='flex flex-col'>
+              <div className="fixed mt-32 bg-yellow-200 py-4 px-10 rounded-t-lg text-xl">Focused Topic</div> 
+              <div className='flex flex-col gap-y-8 mt-56 pr-48'>
+                <section>
+                  <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
+                  <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
+                </section>
+                <section>
+                  <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
+                  <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
+                </section>
+                <section>
+                  <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
+                  <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
+                </section>
+                <section>
+                  <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
+                  <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
+                </section>
+              </div>
+            </div>
+            <div className="fixed bottom-0 w-full">
+              <div className="flex pl-8 gap-x-8">
+                <div className="bg-yellow-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
+                <div className="bg-blue-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
+                <div className="bg-red-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
+                <div className="bg-orange-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
+                <div className="bg-purple-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
+              </div>
+              <div className="h-16 bg-yellow-200">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </body>
   );
 }
