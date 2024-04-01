@@ -29,11 +29,11 @@ const page = () => {
                   <label htmlFor="feedback" className="text-black"> Send my data as feedback for user experience improvement</label>
                 </div>
                 <div className='flex-row space-x-2'> 
-                  <Checkbox className= "rounded b-2 bg-yellow-200 border-[#888888]" id="feedback" />
+                  <Checkbox className= "rounded b-2 bg-yellow-200 border-[#888888]" id="emailNotif" />
                   <label htmlFor="feedback" className="text-black"> Send me updates for followed topics</label>
                 </div>
                 <div className='flex-row space-x-2'> 
-                  <Checkbox className= "rounded b-2 bg-yellow-200 border-[#888888]" id="feedback" />
+                  <Checkbox className= "rounded b-2 bg-yellow-200 border-[#888888]" id="history" />
                   <label htmlFor="feedback" className="text-black"> Save my history</label>
                 </div>
               </div>
