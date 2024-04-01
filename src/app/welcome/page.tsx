@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardFooter, CardTitle } from "@/components/ui/card"
-import Logo from "./summarAI_logo.svg"
+//import Logo from "./summarAI_logo.svg"
 
 export default function Welcome() {
     return (
@@ -28,7 +28,8 @@ export default function Welcome() {
                             <CardDescription className="text-gray-400 text-sm">Global commodities giant Glencore reported emissions surged by approximately 9% compared to the previous year.</CardDescription>
                         </CardHeader>
                     </Card>
-                    <img src='Logo' />
+
+                    <div className="font-petrona italic p-4 text-5xl">SummarAI</div>
                     <h1 className="text-6xl italic mb-7">Get the Scoop<br></br>in Seconds</h1>
                     <Button className="bg-cyan-200 hover:bg-cyan-300 font-bold">Unlock Insights</Button>
                     <Card className="w-[200px] absolute top-[550px] mr-20">
