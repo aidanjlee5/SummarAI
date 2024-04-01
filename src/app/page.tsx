@@ -23,7 +23,7 @@ export default function Home() {
               </div>
             </div>
             <a href="/settings" className="fixed bottom-0 left-0 p-4">
-              <div className="fixed bottom-0 left-0 p-4">
+              <div className="fixed top-0 right-0 p-4">
                 <Image 
                     alt="settings icon"
                     src='/settings.png'
