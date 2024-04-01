@@ -5,7 +5,7 @@ export default function Home() {
       <body className="w-full">
         <div className="grid w-full grid-cols-4">
           <div className="flex w-full h-full col-span-1">
-            <div className="italic fixed top-0 left-0 p-8 text-5xl">SummarAI</div>
+            <div className="font-petrona italic fixed top-0 left-0 p-8 text-5xl">SummarAI</div>
             <div className='w-full ml-8 flex flex-col mt-32' style={{ width: '60%' }}>
               <div className='flex flex-col gap-y-2'>
                 <div className='rounded-lg bg-yellow-200 py-4 mb-2 px-4 text-xl'>For You</div>
@@ -22,14 +22,16 @@ export default function Home() {
                 <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
               </div>
             </div>
-            <div className="fixed bottom-0 left-0 p-4">
-              <Image 
-                  alt="settings icon"
-                  src='/settings.png'
-                  width={75}
-                  height={75}
-                />
-            </div>
+            <a href="/settings" className="fixed bottom-0 left-0 p-4">
+              <div className="fixed bottom-0 left-0 p-4">
+                <Image 
+                    alt="settings icon"
+                    src='/settings.png'
+                    width={75}
+                    height={75}
+                  />
+              </div>
+            </a>
           </div>
           <div className="flex w-full h-full col-span-3">
             <div className='flex flex-col'>

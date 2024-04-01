@@ -6,7 +6,7 @@ export default function Auth() {
         <body>
             <div className="flex flex-row">
                 <div>
-                    <h1 className="italic top-0 left-0 p-8 text-5xl">SummarAI</h1>
+                    <h1 className="font-petrona italic top-0 left-0 p-8 text-5xl">SummarAI</h1>
                 </div>
                 <div className="flex flex-col ml-10">
                     <h1 className="text-3xl font-extrabold mt-48 mb-10">Create An Account</h1>
