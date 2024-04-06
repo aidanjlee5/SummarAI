@@ -29,7 +29,7 @@ export default function Welcome() {
                         </CardHeader>
                     </Card>
 
-                    <div className="font-petrona italic p-4 text-5xl">SummarAI</div>
+                    <img src='summarAILogo.svg' alt='SummarAI Logo' className='w-10/12 h-10 object-contain mb-2' />
                     <h1 className="text-6xl italic mb-7">Get the Scoop<br></br>in Seconds</h1>
                     <Button className="bg-cyan-200 hover:bg-cyan-300 font-bold">Unlock Insights</Button>
                     <Card className="w-[200px] absolute top-[550px] mr-20">

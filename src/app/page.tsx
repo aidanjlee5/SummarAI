@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGear } from '@fortawesome/free-solid-svg-icons';
+
 import Image from 'next/image'
 
 export default function Home() {
@@ -5,32 +8,27 @@ export default function Home() {
       <body className="w-full">
         <div className="grid w-full grid-cols-4">
           <div className="flex w-full h-full col-span-1">
-            <div className="font-petrona italic fixed top-0 left-0 p-8 text-5xl">SummarAI</div>
-            <div className='w-full ml-8 flex flex-col mt-32' style={{ width: '60%' }}>
-              <div className='flex flex-col gap-y-2'>
-                <div className='rounded-lg bg-yellow-200 py-4 mb-2 px-4 text-xl'>For You</div>
-                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-              </div>
-              <div className='flex flex-col gap-y-2 mt-8'>
-                <div className='rounded-lg bg-yellow-200 mb-2 py-4 px-4 text-xl'>Trending Global</div>
-                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-              </div>
+              <div className='w-full ml-8 flex flex-col mt-24' style={{ width: '60%' }}>
+              <div className='fixed left-4 top-6'>
+                <img src='./SummarAILogo.svg' alt='SummarAI Logo' className='object-contain h-10 w-full size-10/12 mb-6' />
+                </div>
+                <div className='flex flex-col gap-y-2'>
+                  <div className='rounded-lg bg-yellow-200 py-4 mb-2 px-4 text-xl'>For You</div>
+                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                </div>
+                <div className='flex flex-col gap-y-2 mt-8'>
+                  <div className='rounded-lg bg-yellow-200 mb-2 py-4 px-4 text-xl'>Trending Global</div>
+                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
+                </div>
             </div>
             <a href="/settings" className="fixed bottom-0 left-0 p-4">
-              <div className="fixed top-0 right-0 p-4">
-                <Image 
-                    alt="settings icon"
-                    src='/settings.png'
-                    width={75}
-                    height={75}
-                  />
-              </div>
+              <FontAwesomeIcon icon={faGear} color='#000000' width='70' className='fixed top-3 right-3 p-4'/>
             </a>
           </div>
           <div className="flex w-full h-full col-span-3">
