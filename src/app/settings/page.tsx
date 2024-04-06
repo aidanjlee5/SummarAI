@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
-import Logo from "./summarAI_logo.svg"
+import Logo from "/SummarAI_logo.svg"
 
 import React from 'react'
 
@@ -9,9 +9,9 @@ const page = () => {
   return (
     <body className="w-full">
         <div className="grid w-full grid-cols-4">
-          <div className="flex w-full h-full col-span-1">
-            <div className="font-petrona italic fixed top-0 left-0 p-6 text-5xl">SummarAI</div>
-            <div className='w-full ml-8 flex flex-col mt-24 space-y-8' style={{ width: '80%' }}>
+          <div className="flex flex-col w-full h-full col-span-1">
+            <div className='w-full ml-8 flex flex-col mt-8 space-y-8' style={{ width: '80%' }}>
+              <img src='./SummarAILogo.svg' alt='SummarAI Logo' className='object-contain size-8/12' />
               <div className='flex flex-col gap-y-4'>
                 <p className='font-bold mb-2 text-2xl'>User Profile</p> 
                 <Input className="bg-yellow-200" placeholder="Full Name" />
@@ -39,7 +39,7 @@ const page = () => {
               </div>
             </div>
             <a href="../" className="fixed bottom-0 left-0 p-4">
-              <div className="fixed top-0 right-0 p-8">
+              <div className="fixed top-1 right-4 p-6">
                 <Button>X</Button>
               </div>
             </a>
