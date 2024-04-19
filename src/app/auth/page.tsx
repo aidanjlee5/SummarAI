@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardFooter, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Label } from "@/components/ui/label"
+import SignUpForm from "@/components/signup-form";
 
 export default function Auth() {
     return (
@@ -17,28 +18,7 @@ export default function Auth() {
                         <TabsTrigger value="login">Login</TabsTrigger>
                     </TabsList>
                     <TabsContent value="register">
-                        <Card>
-                            <CardHeader>
-                                <CardTitle className="mb-2">Register</CardTitle>
-                                <CardDescription>Create a new account here.</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <Label htmlFor="fullname">Full Name</Label>
-                                <Input id="fullname" placeholder="John Doe" className="border-yellow-200 mb-4 mt-1"></Input>
-
-                                <Label htmlFor="registerEmail">Email</Label>
-                                <Input id="registerEmail" placeholder="xyz@email.com" className="border-yellow-200 mb-4 mt-1"></Input>
-                                
-                                <Label htmlFor="createPassword">Create Password</Label>
-                                <Input id="createPassword" placeholder="Password must be at least 8 characters" className="border-yellow-200 mb-4 mt-1"></Input>
-
-                                <Label htmlFor="confirmPassword">Confirm Password</Label>
-                                <Input id="confirmPassword" placeholder="Confirm Password" className="border-yellow-200 mb-4 mt-1"></Input>
-                            </CardContent>
-                            <CardFooter className="flex justify-center">
-                                <Button>Create Account</Button>
-                            </CardFooter>
-                        </Card>
+                        <SignUpForm />
                     </TabsContent>
 
                     <TabsContent value="login">
