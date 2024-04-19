@@ -53,5 +53,5 @@ export async function signup({ email, password }: AuthData) {
     }
 
     revalidatePath("/", "layout");
-    redirect("/welcome");
+    redirect("/");
 }
