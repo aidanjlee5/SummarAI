@@ -31,7 +31,9 @@ export default function Welcome() {
 
                     <img src='summarAILogo.svg' alt='SummarAI Logo' className='w-10/12 h-10 object-contain mb-2' />
                     <h1 className="text-6xl italic mb-7">Get the Scoop<br></br>in Seconds</h1>
-                    <Button className="bg-cyan-200 hover:bg-cyan-300 font-bold">Unlock Insights</Button>
+                    <a href="/auth/topics">    
+                        <Button className="bg-cyan-200 hover:bg-cyan-300 font-bold">Unlock Insights</Button>
+                    </a>
                     <Card className="w-[200px] absolute top-[550px] mr-20">
                         <CardHeader>
                             <CardTitle className="text-gray-500 text-base">Glencore's emmissions rose ~9% in 2023</CardTitle>
