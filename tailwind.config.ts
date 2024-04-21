@@ -18,6 +18,14 @@ const config = {
       },
     },
     extend: {
+      fontWeight: {
+        medium: '500',
+      },
+      fontFamily: {
+        'kumbh': ["Kumbh Sans", "sans-serif"],
+        'kanit': ['Kanit', 'sans-serif'],
+        'petrona': ['Petrona', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
