@@ -28,7 +28,7 @@ export default function Home() {
                 </div>
             </div>
             <a href="/settings" className="fixed bottom-0 left-0 p-4">
-              <FontAwesomeIcon icon={faGear} color='#000000' width='70' className='fixed top-3 right-3 p-4'/>
+              <FontAwesomeIcon icon={faGear} color='#000000' width='70' className='hover:animate-spin-slow fixed top-3 right-3 p-4'/>
             </a>
           </div>
           <div className="flex w-full h-full col-span-3">
