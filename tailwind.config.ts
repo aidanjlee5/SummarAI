@@ -75,10 +75,15 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "spin-slow":{
+          '0%,100%': { transform: "rotate(0deg)" },
+          '50%': { transform: "rotate(30deg)" },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },
