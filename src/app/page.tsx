@@ -1,11 +1,7 @@
-"use client"
-import React, { useRef, useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 
 import Image from 'next/image'
-//import ReactFullpage from '@fullpage/react-fullpage';
-//import useScrollSnap from "react-use-scroll-snap";
 
 export default function Home() {
   return (
@@ -82,80 +78,41 @@ export default function Home() {
               <FontAwesomeIcon icon={faGear} color='#000000' width='70' className='fixed top-3 right-3 p-4'/>
             </a>
           </div>
-        </div>
-        <div className='bg-gradient-to-b from-yellow-200 to-white h-[1200px] w-full justify-end'></div>
-        <div className="snap-center h-screen w-screen flex justify-end" style={{ flexDirection: "column"}}>
-          <div className='flex flex-1 mt-20 flex-col gap-y-8 pr-48 w-[85%]'>
-              <div className="bg-yellow-200 w-[20%] py-4 px-10 rounded-t-lg text-xl">Focused Topic</div>
-              <section>
-                <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
-                <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
-              </section>
-              <section>
-                <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
-                <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
-              </section>
-              <section>
-                <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
-                <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
-              </section>
-              <section>
-                <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
-                <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
-              </section>
+          <div className="flex w-full h-full col-span-3">
+            <div className='flex flex-col'>
+              <div className="fixed mt-32 bg-yellow-200 py-4 px-10 rounded-t-lg text-xl">Focused Topic</div> 
+              <div className='flex flex-col gap-y-8 mt-56 pr-48'>
+                <section>
+                  <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
+                  <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
+                </section>
+                <section>
+                  <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
+                  <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
+                </section>
+                <section>
+                  <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
+                  <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
+                </section>
+                <section>
+                  <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
+                  <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
+                </section>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <div className='flex pl-8 gap-x-8'>
+            <div className="fixed bottom-0 w-full">
+              <div className="flex pl-8 gap-x-8">
                 <div className="bg-yellow-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
                 <div className="bg-blue-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
                 <div className="bg-red-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
                 <div className="bg-orange-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
+                <div className="bg-purple-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
               </div>
-              <div className='h-16 bg-yellow-200'></div>
+              <div className="h-16 bg-yellow-200">
+              </div>
             </div>
+          </div>
         </div>
-        <div className='bg-gradient-to-b from-yellow-200 to-white h-[1200px] w-full justify-end'></div>
-        <div className="snap-center h-screen w-screen flex justify-end" style={{ flexDirection: "column"}}>
-          <div className='flex flex-1 mt-20 flex-col gap-y-8 pr-48 w-[85%]'>
-              <div className="bg-yellow-200 w-[20%] py-4 px-10 rounded-t-lg text-xl">Focused Topic</div>
-              <section>
-                <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
-                <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
-              </section>
-              <section>
-                <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
-                <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
-              </section>
-              <section>
-                <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
-                <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
-              </section>
-              <section>
-                <h1 className='text-2xl font-bold'>Why you should rent, even if you’re ‘rich’</h1>
-                <p className='mt-2 text-lg'>Well, according to the host of Netflix’s “How To Get Rich” and the very dude who founded this newsletter, the answer in an economy this ugly is to rent without remorse (and invest). Hear Ramit’s napkin math and Sam’s tips for home hunters on our top-ranked podcast, My First Million.</p>
-              </section>
-            </div>
-            <div className="flex flex-col">
-              <div className='flex pl-8 gap-x-8'>
-                <div className="bg-yellow-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
-                <div className="bg-blue-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
-                <div className="bg-red-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
-              </div>
-              <div className='h-16 bg-yellow-200'></div>
-            </div>
-          </div>
-          <div className='bg-gradient-to-b from-yellow-200 to-white h-[1200px] w-full justify-end'></div>
-          <div className="snap-center h-screen w-screen flex flex-col">
-            <div className='flex flex-col w-[85%] items-center justify-center h-screen'>
-              <Image 
-                src="/check.png" 
-                alt="Check Image" 
-                width={250} 
-                height={250} 
-              />
-              <p className='text-2xl text-center pt-8'>You’ve finished your brief for the day. <br/>Check back tomorrow for more info or <a href='#' className='underline'>restart.</a></p>
-            </div>
-          </div>
       </div>
     </div>
     </div>
