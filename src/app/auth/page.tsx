@@ -47,6 +47,6 @@ export default function Auth() {
                     </TabsContent>
                 </Tabs>
             </div>
-        </div>
+        </body>
     );
 }

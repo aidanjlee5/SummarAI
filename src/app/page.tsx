@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 
 import Image from 'next/image'
-import ReactFullpage from '@fullpage/react-fullpage';
-import useScrollSnap from "react-use-scroll-snap";
+//import ReactFullpage from '@fullpage/react-fullpage';
+//import useScrollSnap from "react-use-scroll-snap";
 
 export default function Home() {
   return (
-    <body>
+    <div>
       <div className='fixed w-[20%] p-5'>
         <img src='./SummarAILogo.svg' alt='SummarAI Logo' className='object-contain h-10 w-full size-10/12 mb-6' />
         <div className='flex flex-col gap-y-2'>
@@ -57,13 +57,12 @@ export default function Home() {
               <div className="bg-purple-200 py-4 px-10 rounded-t-lg text-lg">Topic</div> 
             </div>
             <div className='h-16 bg-yellow-200'></div>
-      <body className="w-full">
+          </div>
+        </div>
+      <div className="w-full">
         <div className="grid w-full grid-cols-4">
           <div className="flex w-full h-full col-span-1">
               <div className='w-full ml-8 flex flex-col mt-24' style={{ width: '60%' }}>
-              <div className='fixed left-4 top-6'>
-                <img src='./SummarAILogo.svg' alt='SummarAI Logo' className='object-contain h-10 w-full size-10/12 mb-6' />
-                </div>
                 <div className='flex flex-col gap-y-2'>
                   <div className='rounded-lg bg-yellow-200 py-4 mb-2 px-4 text-xl'>For You</div>
                   <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
@@ -158,6 +157,7 @@ export default function Home() {
             </div>
           </div>
       </div>
-    </body>
+    </div>
+    </div>
   );
 }
