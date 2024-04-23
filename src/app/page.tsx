@@ -62,22 +62,6 @@ export default function Home() {
       <div className="w-full">
         <div className="grid w-full grid-cols-4">
           <div className="flex w-full h-full col-span-1">
-              <div className='w-full ml-8 flex flex-col mt-24' style={{ width: '60%' }}>
-                <div className='flex flex-col gap-y-2'>
-                  <div className='rounded-lg bg-yellow-200 py-4 mb-2 px-4 text-xl'>For You</div>
-                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                </div>
-                <div className='flex flex-col gap-y-2 mt-8'>
-                  <div className='rounded-lg bg-yellow-200 mb-2 py-4 px-4 text-xl'>Trending Global</div>
-                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                  <p className='text-lg '><b>Glencore's</b> emissions rose ~9% in 2023</p>
-                </div>
-            </div>
             <a href="/settings" className="fixed bottom-0 left-0 p-4">
               <FontAwesomeIcon icon={faGear} color='#000000' className='size-10 fixed top-3 right-3 p-4'/>
             </a>
