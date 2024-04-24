@@ -63,7 +63,7 @@ export default function Home() {
         <div className="grid w-full grid-cols-4">
           <div className="flex w-full h-full col-span-1">
             <a href="/settings" className="fixed bottom-0 left-0 p-4">
-              <FontAwesomeIcon icon={faGear} color='#000000' className='size-10 fixed top-3 right-3 p-4'/>
+              <FontAwesomeIcon icon={faGear} color='#000000' className='hover:animate-spin-slow size-10 fixed top-3 right-3 p-4'/>
             </a>
           </div>
         </div>
