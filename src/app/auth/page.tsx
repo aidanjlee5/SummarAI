@@ -8,28 +8,30 @@ import LoginForm from "@/components/login-form";
 
 export default function Auth() {
     return (
-        <body>
-            <div className="flex flex-row">
-                <div>
-                    <img src='./SummarAILogo.svg' alt='SummarAI Logo' className='object-contain h-10 w-full size-10/12 mt-8 ml-4' />
+        <div className="w-screen h-screen flex flex-col relative justify-center items-center">
+            <div>
+                <div className="absolute top-5 left-5">
+                    <img src='./SummarAILogo.svg' alt='SummarAI Logo' className='w-full object-contain h-10 size-10/12' />
                 </div>
             
-                <div className="ml-24 mt-28">
+                <div className="w-full">
                     <Tabs defaultValue="register" className="w-[500px]">
                         <TabsList className="grid grid-cols-2 w-full bg-yellow-200">
                             <TabsTrigger value="register">Register</TabsTrigger>
                             <TabsTrigger value="login">Login</TabsTrigger>
                         </TabsList>
-                        <TabsContent value="register">
-                            <SignUpForm />
-                        </TabsContent>
+                        <div className="h-auto min-h-[500px]">
+                            <TabsContent value="register">
+                                <SignUpForm />
+                            </TabsContent>
 
-                        <TabsContent value="login">
-                            <LoginForm />
-                        </TabsContent>
+                            <TabsContent value="login">
+                                <LoginForm />
+                            </TabsContent>
+                        </div>
                     </Tabs>
                 </div>
             </div>
-        </body>
+        </div>
     );
 }

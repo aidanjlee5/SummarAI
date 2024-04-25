@@ -7,11 +7,11 @@ import React from 'react'
 
 const page = () => {
   return (
-    <body className="w-full">
+    <div className="w-full mb-8">
         <div className="grid w-full grid-cols-4">
           <div className="flex flex-col w-full h-full col-span-1">
             <div className='w-full ml-8 flex flex-col mt-8 space-y-8' style={{ width: '80%' }}>
-              <img src='./SummarAILogo.svg' alt='SummarAI Logo' className='object-contain size-8/12' />
+              <img src='./SummarAILogo.svg' alt='SummarAI Logo' className='object-contain size-10/12' />
               <div className='flex flex-col gap-y-4'>
                 <p className='font-bold mb-2 text-2xl'>User Profile</p> 
                 <Input className="bg-yellow-200" placeholder="Full Name" />
@@ -45,7 +45,7 @@ const page = () => {
             </a>
           </div>
         </div>
-      </body>
+      </div>
   );
 }
 
