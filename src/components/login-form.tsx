@@ -20,6 +20,11 @@ export default function LoginForm() {
 
     const isFormValid = () => email.length > 0 && password.length > 0;
 
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault(); // Prevent traditional form submission
+        handleLogin();
+    };
+
     const handleLogin = async (
         event: React.MouseEvent<HTMLButtonElement, MouseEvent>
     ) => {
@@ -33,7 +38,7 @@ export default function LoginForm() {
     }
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <Card>
                 <CardHeader>
                     <CardTitle className="mb-2">Login</CardTitle>
