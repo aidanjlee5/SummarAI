@@ -5,8 +5,8 @@ export default function TopicView({topic, summarizedArticles} : {topic: string, 
         <div className="snap-center h-screen w-screen flex flex-col">
           <div className='flex flex-1 flex-col gap-y-8 pr-48 w-[85%]'>
             <div className="bg-yellow-200 w-[20%] mt-2 py-4 px-10 rounded-t-lg text-xl">{topic}</div>
-            {summarizedArticles.map((article) => {
-                return <Article headline={article["headline"]} summarization={article["summarization"]} />
+            {summarizedArticles.map((article, index) => {
+                return <Article key={index} headline={article["headline"]} summarization={article["summarization"]} />
             })}
           </div>
           <div className="flex flex-col">
