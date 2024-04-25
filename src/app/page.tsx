@@ -9,10 +9,10 @@ import TopicView from "@/components/topic-view"
 export default function Home() {
 
   const [topics] = useState<Topics>({
-    'Politics': [210, 174],
+    'Politics': [210, 245],
     'Sports': [238,240],
     'Health': [165,199],
-    'Tech': [243, 244]
+    'Tech': [261, 254]
   })
 
   const [data, setData] = useState<SummarizedArticlesByTopic>({});
@@ -32,16 +32,12 @@ export default function Home() {
         <div className='flex flex-col gap-y-2'>
           <div className='rounded-lg bg-yellow-200 py-4 mb-2 px-4 text-xl'>For You</div>
           <p className='text-lg pl-2'><b>Glencore&apos;s</b> emissions rose ~9% in 2023</p>
-          <p className='text-lg pl-2'><b>Glencore&apos;s</b> emissions rose ~9% in 2023</p>
-          <p className='text-lg pl-2'><b>Glencore&apos;s</b> emissions rose ~9% in 2023</p>
-          <p className='text-lg pl-2'><b>Glencore&apos;s</b> emissions rose ~9% in 2023</p>
+          <p className='text-lg pl-2'><b>NY Yankees</b> Targeting Free-Agent Pitcher from St. Louis Cardinals</p>
         </div>
         <div className='flex flex-col gap-y-2 mt-8'>
           <div className='rounded-lg bg-yellow-200 mb-2 py-4 px-4 text-xl'>Trending Global</div>
-          <p className='text-lg pl-2'><b>Glencore&apos;s</b> emissions rose ~9% in 2023</p>
-          <p className='text-lg pl-2'><b>Glencore&apos;s</b> emissions rose ~9% in 2023</p>
-          <p className='text-lg pl-2'><b>Glencore&apos;s</b> emissions rose ~9% in 2023</p>
-          <p className='text-lg pl-2'><b>Glencore&apos;s</b> emissions rose ~9% in 2023</p>
+          <p className='text-lg pl-2'><b>Former Executive Director</b> of U.S. Election Assistance Commission Fired</p>
+          <p className='text-lg pl-2'><b>2024 NFL Draft:</b> What Teams Should Do in the First Round</p>
          </div>
       </div>
       <div className="w-4/5 mr-0 ml-[20%] justify-end snap-y snap-mandatory h-screen overflow-x-hidden relative">
