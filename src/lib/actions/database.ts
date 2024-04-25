@@ -1,23 +1,28 @@
+"use server"
 import { createClient } from "@/utils/supabase/server";
 
-export async function getSummarizationById(id: string) {
-    const supabase = createClient();
-    const { data, error } = await supabase.from("summarization").select("headling").eq("id", id);
-
-    if (error) {
-        throw new Error(error.message);
+export async function getSummarizedArticlesFromTopics(topics: Topics) {
+    let results: SummarizedArticlesByTopic = {};
+  
+    for (let topic in topics) {
+      const ids = topics[topic];
+      results[topic] = await getSummarizedArticlesFromList(ids);
     }
-
-    return "Learning " + data[0].title.split(" ")[0];
-}
-
-export async function getSummarizations() {
+  
+    return results;
+  }
+  
+  async function getSummarizedArticlesFromList(ids: number[]) {
     const supabase = createClient();
-    const { data, error } = await supabase.from("summarization").select("*");
+    const promises = ids.map(async (id) => {
+      const { data: headlineData } = await supabase.from("summarizations").select("headline").eq("id", id).single();
+      const { data: summarizationData } = await supabase.from("summarizations").select("summarization").eq("id", id).single();
+      return {
+        headline: headlineData.headline,
+        summarization: summarizationData.summarization
+      };
+    });
+    return Promise.all(promises);
+  }
+  
 
-    if (error) {
-        throw new Error(error.message);
-    }
-
-    return data;
-}
